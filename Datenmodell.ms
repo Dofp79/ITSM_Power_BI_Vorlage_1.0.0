@@ -24,7 +24,7 @@ CALCULATE(
 //
 // Dokumentation
 // Tabelle:    dim_Kalender
-// Projekt:    Prod_IT3_AufEinemBlickPower_BI_Vorlage_1.0.0
+// Projekt:    ITSM_BI_Vorlage_1.0.0
 // Autor:      Doniman Francisco Peña Parra
 // Erstellt:   04.06.2025
 // Zweck:      Bereitstellung einer vollständig modellierten Zeitdimension
