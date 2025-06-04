@@ -52,3 +52,27 @@ ADDCOLUMNS(
     "WochentagName", FORMAT([Date], "dddd")
 )
 
+//
+// Dokumentation
+// Tabelle:    MeasureTable
+// Projekt:    ITSM_BI_Vorlage_1.0.0
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   04.06.2025
+// Zweck:      Zentrale Verwaltung und organisatorische Trennung von DAX-Maßzahlen
+// Beschreibung:
+//   - Dummy-Tabelle ohne Datenbindung
+//   - Dient als logische Sammelstelle für Measures
+//   - Ermöglicht bessere Übersicht, Wartbarkeit und Rollentrennung
+// Prinzipien:
+//   - Halte es einfach und praktisch (nur Struktur, keine Daten)
+//   - Fördere Transparenz (klare Trennung von Measures und Fakten)
+//   - Fokussiere dich auf den Wert (optimiert die Entwicklernavigation)
+//
+
+MeasureTable = 
+DATATABLE(
+    "Measure", STRING, 
+    {
+        {"Maßzahlen"}
+    }
+)
