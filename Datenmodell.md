@@ -20,3 +20,35 @@ CALCULATE(
     [M_Umsatz],
     DATESYTD('dim_Kalender'[Datum])
 )
+
+//
+// Dokumentation
+// Tabelle:    dim_Kalender
+// Projekt:    Prod_IT3_AufEinemBlickPower_BI_Vorlage_1.0.0
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   04.06.2025
+// Zweck:      Bereitstellung einer vollständig modellierten Zeitdimension
+// Beschreibung:
+//   - Erstellt über DAX-Funktion CALENDAR für die Jahre 2023–2025
+//   - Enthält gängige Zeitspalten für Zeitintelligenzfunktionen
+//   - Unterstützt Funktionen wie YTD, QTD, MTD und Zeitvergleiche
+//   - Wochentagslogik: Montag = 1 (WEEKDAY mit 2 als Typ)
+// Prinzipien:
+//   - Beginne dort, wo du stehst (definierter Kalenderbereich)
+//   - Optimiere und automatisiere (spaltenweise Berechnung)
+//   - Arbeite iterativ mit Feedback (erweiterbar bei Bedarf)
+//
+
+dim_Kalender = 
+ADDCOLUMNS(
+    CALENDAR(DATE(2023, 1, 1), DATE(2025, 12, 31)),
+    "Jahr", YEAR([Date]),
+    "Monat", FORMAT([Date], "MMMM"),
+    "MonatNr", MONTH([Date]),
+    "Quartal", "Q" & FORMAT([Date], "Q"),
+    "Jahr-Monat", FORMAT([Date], "YYYY-MM"),
+    "Tag", DAY([Date]),
+    "Wochentag", WEEKDAY([Date], 2),
+    "WochentagName", FORMAT([Date], "dddd")
+)
+
