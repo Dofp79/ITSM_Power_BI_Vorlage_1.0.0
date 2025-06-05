@@ -42,6 +42,29 @@ CALCULATE(
 Anzahl Vorgänge = 
 COUNTROWS(fact_UngeplanteDowntimes)
 
+//
+// Dokumentation
+// Maßzahl:    Anzahl TRUE Vorgänge
+// Tabelle:    MeasureTable
+// Projekt:    ITSM_BI_Vorlage_1.0.0
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   05.06.2025
+// Zweck:      Zählt nur ungeplante Downtimes mit tatsächlichem Service Impact (TRUE)
+// Beschreibung:
+//   - Nutzt CALCULATE zur Filterung der Faktentabelle auf [Service Impact] = TRUE()
+//   - Liefert eine reine Anzahl betroffener Vorfälle (KPI)
+// Prinzipien:
+//   - Fokussiere dich auf den Wert
+//   - Halte es einfach und praktisch
+//
+
+Anzahl TRUE Vorgänge =
+CALCULATE(
+    COUNTROWS(fact_UngeplanteDowntimes),
+    fact_UngeplanteDowntimes[Service Impact] = TRUE()
+)
+
+
 
 //
 // Dokumentation
