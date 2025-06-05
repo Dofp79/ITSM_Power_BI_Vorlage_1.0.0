@@ -23,6 +23,28 @@ CALCULATE(
 
 //
 // Dokumentation
+// Measure:    Anzahl Vorgänge
+// Tabelle:    MeasureTable
+// Projekt:    ITSM_BI_Vorlage_1.0.0
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   05.06.2025
+// Zweck:      Zählt alle Einträge in der Tabelle fact_UngeplanteDowntimes
+// Beschreibung:
+//   - Nutzt COUNTROWS auf der Faktentabelle fact_UngeplanteDowntimes
+//   - Dient als Basiskennzahl für Dashboards (z. B. IT-Betriebsunterbrechungen)
+//   - Kann durch Zeitfilter (dim_Kalender) und RLS differenziert werden
+// Prinzipien:
+//   - Fokussiere dich auf den Wert (zentrale Kennzahl)
+//   - Halte es einfach und praktisch (COUNTROWS für schnelles Verständnis)
+//   - Arbeite iterativ mit Feedback (in KPI-Analysen einsetzbar)
+//
+
+Anzahl Vorgänge = 
+COUNTROWS(fact_UngeplanteDowntimes)
+
+
+//
+// Dokumentation
 // Tabelle:    dim_Kalender
 // Projekt:    ITSM_BI_Vorlage_1.0.0
 // Autor:      Doniman Francisco Peña Parra
