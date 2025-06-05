@@ -23,6 +23,26 @@ CALCULATE(
 
 //
 // Dokumentation
+// Maßzahl:    Gesamtdauer TRUE Vorgänge
+// Tabelle:    MeasureTable
+// Projekt:    ITSM_BI_Vorlage_1.0.0
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   05.06.2025
+// Zweck:      Berechnet die Gesamtdauer aller Downtimes mit Service Impact TRUE
+// Beschreibung:
+//   - Nutzt CALCULATE zur Filterung auf TRUE()
+//   - Aggregiert [Dauer]-Werte
+//
+
+Gesamtdauer TRUE Vorgänge =
+CALCULATE(
+    SUM(fact_UngeplanteDowntimes[Dauer]),
+    fact_UngeplanteDowntimes[Service Impact] = TRUE()
+)
+
+
+//
+// Dokumentation
 // Measure:    Anzahl Vorgänge
 // Tabelle:    MeasureTable
 // Projekt:    ITSM_BI_Vorlage_1.0.0
