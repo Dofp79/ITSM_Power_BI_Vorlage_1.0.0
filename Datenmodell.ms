@@ -88,7 +88,7 @@ CALCULATE(
 // Dokumentation
 // Measure:    TRUE Vorgänge Mai2025
 // Tabelle:    MeasureTable
-// Projekt:    Prod_IT3_AufEinemBlickPower_BI_Vorlage_1.0.0
+// Projekt:    ITSM_BI_Vorlage_1.0.0
 // Autor:      Doniman Francisco Peña Parra
 // Erstellt:   10.06.2025
 // Zweck:      Zählt die TRUE-Vorgänge im Monat Mai 2025 anhand des Start-Datums
