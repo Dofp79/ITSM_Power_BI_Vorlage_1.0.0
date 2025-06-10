@@ -84,7 +84,30 @@ CALCULATE(
     fact_UngeplanteDowntimes[Service Impact] = TRUE()
 )
 
-
+//
+// Dokumentation
+// Measure:    TRUE Vorgänge Mai2025
+// Tabelle:    MeasureTable
+// Projekt:    Prod_IT3_AufEinemBlickPower_BI_Vorlage_1.0.0
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.06.2025
+// Zweck:      Zählt die TRUE-Vorgänge im Monat Mai 2025 anhand des Start-Datums
+// Beschreibung:
+//   - Nutzt COUNTROWS zur Zählung aller Zeilen mit Service Impact = TRUE()
+//   - Filtert direkt über die Spalte [Start] aus der Faktentabelle
+//   - Umgeht die Kalenderbeziehung für gezielte Monatsauswertungen
+// Prinzipien:
+//   - Beginne dort, wo du stehst (direkte Feldfilterung)
+//   - Fokussiere dich auf den Wert (konkrete Monatsauswertung)
+//   - Halte es einfach und praktisch (kein Beziehungswechsel nötig)
+//
+TRUE Vorgänge Mai2025 = 
+CALCULATE(
+    COUNTROWS(fact_UngeplanteDowntimes),
+    fact_UngeplanteDowntimes[Service Impact] = TRUE(),
+    MONTH(fact_UngeplanteDowntimes[Start]) = 5,
+    YEAR(fact_UngeplanteDowntimes[Start]) = 2025
+)
 
 //
 // Dokumentation
