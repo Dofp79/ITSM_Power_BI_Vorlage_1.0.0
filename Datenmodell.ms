@@ -91,7 +91,7 @@ UNION (
 //
 // Dokumentation
 // Tabelle:    dim_Geraet
-// Projekt:    Prod_IT3_AufEinemBlickPower_BI_Vorlage_1.0.0
+// Projekt:    ITSM_Power_BI_Vorlage_1.0.0
 // Autor:      Doniman Francisco Peña Parra
 // Erstellt:   11.06.2025
 // Zweck:      Zentrale Gerätedimension für Filterung, Slicer und Berichtsnavigation
