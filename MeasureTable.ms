@@ -153,4 +153,23 @@ CALCULATE(
 Anzahl iPhones =
 COUNTROWS ( dim_Geraet_iphone )
 
+//
+// Dokumentation
+// Measure:    Anzahl iPads
+// Tabelle:    MeasureTable
+// Projekt:    ITSM_Power_BI_Vorlage_1.0.0
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   17.06.2025
+// Zweck:      Zählt die Anzahl der iPad-Geräte in der Subdimension
+// Beschreibung:
+//   - Nutzt COUNTROWS auf der Tabelle [dim_Geraet_ipad]
+//   - Kann für KPIs, Filterungen oder Slicer-basierte Visuals verwendet werden
+// Prinzipien:
+//   - Halte es einfach und praktisch
+//   - Beginne dort, wo du stehst (einzelne Typ-Subdimension)
+//   - Optimiere und automatisiere (wiederverwendbar in Berichten)
+//
+Anzahl iPads =
+COUNTROWS ( dim_Geraet_ipad )
+
 
