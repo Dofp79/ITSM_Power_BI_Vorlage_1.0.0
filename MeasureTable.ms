@@ -140,7 +140,7 @@ CALCULATE(
 // Tabelle:    MeasureTable
 // Projekt:    ITSM_Power_BI_Vorlage_1.0.0
 // Autor:      Doniman Francisco Peña Parra
-// Erstellt:   11.06.2025
+// Erstellt:   17.06.2025
 // Zweck:      Zählt die Anzahl der iPhone-Geräte in der Gerätedimension
 // Beschreibung:
 //   - Verwendet COUNTROWS auf der Subdimension [dim_Geraet_iphone]
