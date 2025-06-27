@@ -68,3 +68,14 @@ ITSM_Power_BI_Vorlage_1.0.0/
 ├── MeasureTable.ms        # Enthält zentrale DAX-Maßzahlen
 ├── Spalte.ms              # Zusätzliche berechnete Spalten (falls vorhanden)
 └── README.md              # Projektbeschreibung (dieses Dokument)
+```
+
+📫 Kontakt
+Fragen oder Feedback?
+Doniman F. Peña Parra
+
+🌐 GPT-Link zur Projektunterstützung
+
+🔗 LinkedIn
+
+✉️ E-Mail: dofp79@hotmail.com
