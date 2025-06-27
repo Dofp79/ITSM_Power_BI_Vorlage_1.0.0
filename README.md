@@ -26,12 +26,12 @@ nach Best Practices der ITIL 4-Philosophie. Sie enthält modellierte Tabellen, s
 
 ---
 
-## 📐 Technische Highlights
+##  Technische Highlights
 
 - `dim_Kalender`: Unterstützt YTD, MTD, QTD, Zeitvergleiche  
 - `dim_Geraet`: Einheitliche Gerätestruktur für iOS-Endgeräte  
 - `MeasureTable`: Nur für DAX Measures – keine Datenbindung  
-- ⚙️ Erstellt mit **CALENDAR**, **UNION**, **DISTINCT**, **SELECTCOLUMNS**
+-  Erstellt mit **CALENDAR**, **UNION**, **DISTINCT**, **SELECTCOLUMNS**
 
 ---
 
