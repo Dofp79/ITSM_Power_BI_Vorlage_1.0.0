@@ -69,6 +69,13 @@ ITSM_Power_BI_Vorlage_1.0.0/
 ├── Spalte.ms              # Zusätzliche berechnete Spalten (falls vorhanden)
 └── README.md              # Projektbeschreibung (dieses Dokument)
 ```
+---
+
+##  Verwandte Repositorien
+
+-  **ITIL-Practice-Governance-Bebauungsplan**: (https://github.com/Dofp79/ITIL-Practice-Governance-Bebauungsplan)
+-  **Referatskapazität**: (https://github.com/Dofp79/Referatskapazit-t/tree/main)
+-  **Power_BI_Roadmap**: (https://github.com/Dofp79/Power_BI_Roadmap)
 
 ---
 
